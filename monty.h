@@ -6,9 +6,15 @@
 #include <string.h>
 #include <sys/types.h>
 #include <unistd.h>
+typedef struct variables
+{
+	unsigned int line_number;
+	char *cmd;
+} vars;
 
-extern line_number;
-extern cmd;
+/* global variables */
+extern vars gvars;
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
