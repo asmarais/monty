@@ -1,2 +1,2 @@
 # monty
-we will learn LIFO &FIFO
+we will learn STACKS & QUEUES, LIFO & FIFO
