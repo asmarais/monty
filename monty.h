@@ -8,6 +8,7 @@
 #include <unistd.h>
 
 extern line_number;
+extern cmd;
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
