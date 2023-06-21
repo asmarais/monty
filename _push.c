@@ -11,7 +11,7 @@ void _push(stack_t **stack, int line_number)
 {
 	stack_t *new;
 	int n, i = 0;
-	char *param = gvars.raw_input
+	char *param = gvars.raw_input;
 
 	if (param)
 	{
