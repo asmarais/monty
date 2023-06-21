@@ -3,7 +3,6 @@
 /**
  * _pall - prints the value at the top of the stack, followed by a new line
  * @stack: dlistint_t
- * Return: Nb of nodes
 */
 
 void _pall(stack_t *stack)
