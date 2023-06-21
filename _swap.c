@@ -9,7 +9,7 @@
 
 void _swap(stack_t **stack, int line_number)
 {
-	stack_t *first, *second, *temp;
+	stack_t *first, *second;
 
 	if (*stack == NULL && (*stack)->next == NULL)
 	{
