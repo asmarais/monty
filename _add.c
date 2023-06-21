@@ -3,7 +3,7 @@
 /**
  * _add - The opcode add adds the top two elements of the stack.
  * @stack: pointer that points at the head of a stack
- * @line_numer: the number of the line
+ * @line_number: the number of the line
  * Return: nothing
  */
 
@@ -19,7 +19,7 @@ void _add(stack_t **stack, int line_number)
 	}
 	ptr = *stack;
 	(ptr->next)->n += ptr->n;
-	(ptr->-next)->prev = NULL;
+	(ptr->next)->prev = NULL;
 	*stack = ptr->next;
 	free(ptr);
 }

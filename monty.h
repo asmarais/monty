@@ -6,6 +6,15 @@
 #include <string.h>
 #include <sys/types.h>
 #include <unistd.h>
+
+/**
+ * struct variables - the list of gloabl variables
+ * @line_number: the number of the line
+ * @cmd: string value of first argument in file
+ *
+ *
+ */
+
 typedef struct variables
 {
 	unsigned int line_number;
@@ -26,9 +35,9 @@ extern vars gvars;
  */
 typedef struct stack_s
 {
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
+	int n;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stack_t;
 
 /**
@@ -41,8 +50,8 @@ typedef struct stack_s
  */
 typedef struct instruction_s
 {
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
+	char *opcode;
+	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
 /*functions*/
@@ -52,7 +61,7 @@ void _pint(stack_t *stack, int line_number);
 void _pop(stack_t **stack, int line_number);
 void _swap(stack_t **stack, int line_number);
 void _add(stack_t **stack, int line_number);
-void _nop(stack_t **stack, int line_number);
+void _nop(void);
 
 #endif /*MONTY_H*/
 
