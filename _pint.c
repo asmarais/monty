@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * _pint - pushes an element to the stack
+ * _pint - prints the value at the top of the stack, followed by a new line
  * @stack: stack
  * @line_number: int
  * Return: nothing
