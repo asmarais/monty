@@ -18,13 +18,10 @@ void _swap(stack_t **stack, int line_number)
 		exit(EXIT_FAILURE);
 	}
 	first = *stack;
-	temp = *stack;
-	second = temp->next;
-	temp = second;
-	temp->next = first;
-	temp->prev = NULL;
-	(second->next)->prev = first;
-	free(first);
-	free(second);
-	free(temp);
+	second = (*stack)->next;
+	(*stack)->prev = second;
+	(*stack)->next = second->next;
+	second->prev = NULL;
+	second->next = first;
+	*stack = second;
 }
