@@ -11,7 +11,7 @@
  * struct variables - the list of gloabl variables
  * @line_number: the number of the line
  * @cmd: string value of first argument in file
- *
+ * @row_input: 
  *
  */
 
@@ -19,6 +19,7 @@ typedef struct variables
 {
 	unsigned int line_number;
 	char *cmd;
+	char *row_input;
 } vars;
 
 /* global variables */
