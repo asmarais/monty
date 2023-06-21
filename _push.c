@@ -44,4 +44,4 @@ void _push(stack_t **stack, int line_number)
 	if (*stack != NULL)
 		(*stack)->prev = new;
 	*stack = new;
-}_push.c
+}
