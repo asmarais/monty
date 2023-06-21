@@ -25,12 +25,12 @@ int find_op(stack_t **stack)
 	{
 		if (strcmp(cmd, OP[i].opcode) == 0)
 		{
-			OP[i].f(stack, line_number);
+			OP[i].f(stack, gvars.line_number);
 			return (1);
 		}
 		i++;
 	}
 	fprintf(stdout, "L%d: unknown instruction %s\n",
-	line_number, cmd);
+	gvars.line_number, gvars.cmd);
 	return (-1);
 }
