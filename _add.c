@@ -9,5 +9,17 @@
 
 void _add(stack_t **stack, int line_number)
 {
-	
+	stack_t *ptr;
+
+	if (*stack == NULL && (*stack)->next == NULL)
+	{
+		fprintf(stdout, "L%d: can't swap, stack too short\n",
+			line_number);
+		exit(EXIT_FAILURE);
+	}
+	ptr = *stack;
+	(ptr->next)->n += ptr->n;
+	(ptr->-next)->prev = NULL;
+	*stack = ptr->next;
+	free(ptr);
 }
