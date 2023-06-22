@@ -11,7 +11,7 @@
  * struct variables - the list of gloabl variables
  * @line_number: the number of the line
  * @cmd: string value of first argument in file
- * @raw_input: 
+ * @raw_input: argument value
  *
  */
 
@@ -57,13 +57,12 @@ typedef struct instruction_s
 
 /*functions*/
 void _push(stack_t **stack, int line_number);
-void _pall(stack_t **stack);
-void _pint(stack_t **stack, int line_number);
+void _pall(stack_t *stack);
+void _pint(stack_t *stack, int line_number);
 void _pop(stack_t **stack, int line_number);
 void _swap(stack_t **stack, int line_number);
 void _add(stack_t **stack, int line_number);
 void _nop(void);
 
 #endif /*MONTY_H*/
-
 
