@@ -56,13 +56,13 @@ typedef struct instruction_s
 } instruction_t;
 
 /*functions*/
-void _push(stack_t **stack, int line_number);
-void _pall(stack_t *stack);
-void _pint(stack_t *stack, int line_number);
-void _pop(stack_t **stack, int line_number);
-void _swap(stack_t **stack, int line_number);
-void _add(stack_t **stack, int line_number);
-void _nop(void);
+void _push(stack_t **stack, unsigned int line_number);
+void _pall(stack_t **stack, unsigned int line_number);
+void _pint(stack_t **stack, unsigned int line_number);
+void _pop(stack_t **stack, unsigned int line_number);
+void _swap(stack_t **stack, unsigned int line_number);
+void _add(stack_t **stack, unsigned int line_number);
+void _nop(stack_t **stack, unsigned int line_number);
 void _free(stack_t *head);
 
 #endif /*MONTY_H*/
