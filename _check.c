@@ -8,7 +8,6 @@
 int check_val(char *str)
 {
 	int i = 0;
-	bool
 
 	if (str[0] == '-')
 		i++;
