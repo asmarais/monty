@@ -1,6 +1,8 @@
 #include "monty.h"
 #include <stdio.h>
 
+
+vars gvars;
 /**
  * main - runs the monty intrepreter
  * @argc: the number of argument
@@ -11,12 +13,12 @@
 int main(int argc, char **argv)
 {
 	FILE *f;
-	stack_t *tmp;
-	stack_t *stack = NULL;
+      	stack_t *stack = NULL;
 	char *lineptr = NULL;
 	size_t n = 0;
 	ssize_t read;
 	int token;
+	int check;
 
 	gvars.line_number = 0;
 	gvars.cmd = NULL;

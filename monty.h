@@ -21,6 +21,7 @@ typedef struct variables
 	unsigned int line_number;
 	char *cmd;
 	char *raw_input;
+	int value;
 } vars;
 
 /* global variables */

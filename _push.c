@@ -13,7 +13,7 @@ void _push(stack_t **stack, unsigned int line_number)
 	int n, i = 0;
 	char *param = gvars.raw_input;
 
-	if (param)
+	if (param != NULL)
 	{
 		if (param[0] == '-')
 			i++;

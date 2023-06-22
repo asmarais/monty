@@ -8,17 +8,16 @@
 
 int tokenize(char *str)
 {
-	char delim = " \r\t";
-	char *token;
+	char *delim = " \r\t";
 
 	if (!str)
-	return (-1);
+		return (-1);
 	gvars.cmd = strtok(str, delim);
 	if (gvars.cmd)
 	{
-		token = strtok(NULL, delim);
-		if (token)
-			gvars.raw_input = atoi(token);
+	        gvars.raw_input= strtok(NULL, delim);
+		if (gvars.cmd)
+			gvars.value = atoi(gvars.raw_input);
 	}
 	return (1);
 }
