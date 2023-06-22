@@ -12,9 +12,7 @@ void _push(stack_t **stack, unsigned int line_number)
 	stack_t *new;
 	int n, i;
 	char *param = gvars.raw_input;
-	for (i = 0; param[i] != '\0';i++)
-	printf("%c",param[i]);
-	printf("%d", check_val(param));
+	
 	if (param == NULL || check_val(param) == -1)
 	{
 		printf("L<%d>: usage: push integer\n", line_number);
