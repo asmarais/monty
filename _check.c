@@ -13,6 +13,7 @@ int check_val(char *str)
 		i++;
 	while (str[i])
 	{
+		printf("%c", str[i]);
 		if (str[i] > 47 && str[i] < 58)
 			i++;
 		else
