@@ -22,6 +22,7 @@ int main(int argc, char **argv)
 
 	gvars.line_number = 0;
 	gvars.cmd = NULL;
+	gvars.raw_input = NULL;
 
 	if (argc != 2)
 	{
