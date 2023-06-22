@@ -17,8 +17,7 @@ int main(int argc, char **argv)
 
 	gvars.line_number = 0;
 	gvars.cmd = NULL;
-	
-	
+
 	if (argc != 2)
 	{
 		fprintf(stdout, "USAGE: monty file\n");
@@ -38,7 +37,7 @@ int main(int argc, char **argv)
 		if (token != -1)
 		{
 			check = find_op(&stack);
-			if(check == -1)
+			if (check == -1)
 			{
 				exit(EXIT_FAILURE);
 			}
