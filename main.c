@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 		exit(EXIT_FAILURE);
 	}
 
-	while (read = getline(&lineptr, &n, f) != -1)
+	while ((read = getline(&lineptr, &n, f)) != -1)
 	{
 		gvars.line_number++;
 		token = tokenize(lineptr);
