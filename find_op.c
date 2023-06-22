@@ -23,7 +23,7 @@ int find_op(stack_t **stack)
 
 	while (OP[i].opcode != NULL)
 	{
-		if (strcmp(cmd, OP[i].opcode) == 0)
+		if (strcmp(gvars.cmd, OP[i].opcode) == 0)
 		{
 			OP[i].f(stack, gvars.line_number);
 			return (1);
