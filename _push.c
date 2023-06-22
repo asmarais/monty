@@ -12,10 +12,10 @@ void _push(stack_t **stack, unsigned int line_number)
 	stack_t *new;
 	int n;
 	char *param = gvars.raw_input;
-
-	if (check_val(param) == -1)
+	printf("%s",param);
+	if (param == NULL || check_val(param) == -1)
 	{
-		printf("L<%d>: usage: push integer1\n", line_number);
+		printf("L<%d>: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 
