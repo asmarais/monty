@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 
-vars gvars;
+
 /**
  * main - runs the monty intrepreter
  * @argc: the number of argument
@@ -13,7 +13,7 @@ vars gvars;
 int main(int argc, char **argv)
 {
 	FILE *f;
-      	stack_t *stack = NULL;
+	stack_t *stack = NULL;
 	char *lineptr = NULL;
 	size_t n = 0;
 	ssize_t read;
