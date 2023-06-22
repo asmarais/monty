@@ -19,9 +19,9 @@ void _push(stack_t **stack, unsigned int line_number)
 			i++;
 		while (param[i] != '\0')
 		{
-			if (param[i] < 48 || param[i] > 57)
+			if (!(param[i] > 47 && param[i] < 58))
 			{
-				printf("L<%d>: usage: push integer\n", line_number);
+				printf("L<%d>: usage: push integer'1'\n", line_number);
 				exit(EXIT_FAILURE);
 			}
 			i++;
@@ -29,7 +29,7 @@ void _push(stack_t **stack, unsigned int line_number)
 	}
 	else
 	{
-		printf("L<%d>: usage: push integer'asma'\n", line_number);
+		printf("L<%d>: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 
