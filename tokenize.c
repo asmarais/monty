@@ -16,7 +16,7 @@ int tokenize(char *str)
 	if (gvars.cmd)
 	{
 	        gvars.raw_input= strtok(NULL, delim);
-		if (gvars.cmd)
+		if (gvars.raw_input)
 			gvars.value = atoi(gvars.raw_input);
 	}
 	return (1);
