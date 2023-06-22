@@ -29,7 +29,7 @@ void _push(stack_t **stack, unsigned int line_number)
 	}
 	else
 	{
-		printf("L<%d>: usage: push integer\n", line_number);
+		printf("L<%d>: usage: push integer'asma'\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 
