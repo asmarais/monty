@@ -21,7 +21,7 @@ void _push(stack_t **stack, unsigned int line_number)
 		{
 			if (!(param[i] > 47 && param[i] < 58))
 			{
-				printf("L<%d>: usage: push integer\n", line_number);
+				printf("L<%d>: usage: push integer'0'\n", line_number);
 				exit(EXIT_FAILURE);
 			}
 			i++;
