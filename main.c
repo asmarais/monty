@@ -29,8 +29,8 @@ int main(int argc, char **argv)
 		fprintf(stdout, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	read = getline(&lineptr, &n, f);
-	while (read != -1)
+	
+	while (read = getline(&lineptr, &n, f) != -1)
 	{
 		gvars.line_number++;
 		token = tokenize(lineptr);
@@ -42,6 +42,6 @@ int main(int argc, char **argv)
 				exit(EXIT_FAILURE);
 			}
 		}
-		read = getline(&lineptr, &n, f);	
+			
 	}
 }
