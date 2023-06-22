@@ -11,7 +11,7 @@ int check_val(char *str)
 
 	if (str[0] == '-')
 		i++;
-	while (str[i] != '/0')
+	while (str[i] != '\0')
 	{
 		printf("%c", str[i]);
 		if (str[i] > 47 && str[i] < 58)
