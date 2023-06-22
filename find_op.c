@@ -10,7 +10,7 @@ int find_op(stack_t **stack)
 {
 	int i = 0;
 
-	instruction OP[] = {
+	instruction_t OP[] = {
 		{"push", _push},
 		{"pall", _pall},
 		{"pint", _pint},
