@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdio.h>
 
 /**
  * main - runs the monty intrepreter
@@ -13,7 +14,8 @@ int main(int argc, char **argv)
 	stack_t *tmp;
 	stack_t *stack = NULL;
 	char *lineptr = NULL;
-	size_t n, read;
+	size_t n;
+	ssize_t read;
 
 	gvars.line_number = 0;
 	gvars.cmd = NULL;
@@ -30,7 +32,7 @@ int main(int argc, char **argv)
 		exit(EXIT_FAILURE);
 	}
 
-	while (getline(&lineptr, &n, f) != -1)
+	while (read = getline(&lineptr, &n, f) != -1)
 	{
 		gvars.line_number++;
 		token = tokenize(lineptr);
