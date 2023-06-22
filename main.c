@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 	stack_t *tmp;
 	stack_t *stack = NULL;
 	char *lineptr = NULL;
-	size_t n;
+	size_t n = 0;
 	ssize_t read;
 
 	gvars.line_number = 0;
