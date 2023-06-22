@@ -7,7 +7,7 @@
  * Return: nothing
  */
 
-void _swap(stack_t **stack, int line_number)
+void _swap(stack_t **stack, unsigned int line_number)
 {
 	stack_t *first, *second;
 
