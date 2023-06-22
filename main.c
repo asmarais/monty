@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 
-
+vars gvars;
 /**
  * main - runs the monty intrepreter
  * @argc: the number of argument
