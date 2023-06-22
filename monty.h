@@ -63,6 +63,7 @@ void _pop(stack_t **stack, int line_number);
 void _swap(stack_t **stack, int line_number);
 void _add(stack_t **stack, int line_number);
 void _nop(void);
+void _free(stack_t *head);
 
 #endif /*MONTY_H*/
 
