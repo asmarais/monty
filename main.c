@@ -45,8 +45,6 @@ int main(int argc, char **argv)
 			check = find_op(&stack);
 			if (check == -1)
 			{
-				fclose(f);
-				_free(stack);
 				exit(EXIT_FAILURE);
 			}
 		}
