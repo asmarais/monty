@@ -5,9 +5,9 @@
  * @stack: dlistint_t
 */
 
-void _pall(stack_t *stack)
+void _pall(stack_t **stack)
 {
-	stack_t *current = stack;
+	stack_t *current = *stack;
 
 	if (stack == NULL)
 		return;
