@@ -10,6 +10,7 @@
 int main(int argc, char **argv)
 {
 	FILE *f;
+	stack_t *tmp;
 	stack_t *stack = NULL;
 	char *lineptr = NULL;
 	size_t n, read;
@@ -29,7 +30,7 @@ int main(int argc, char **argv)
 		fprintf(stdout, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	
+
 	while (read = getline(&lineptr, &n, f) != -1)
 	{
 		gvars.line_number++;
@@ -42,6 +43,8 @@ int main(int argc, char **argv)
 				exit(EXIT_FAILURE);
 			}
 		}
-			
 	}
+	fclose(f);
+	_free(stack);
+	return (1);
 }
