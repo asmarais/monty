@@ -47,11 +47,9 @@ int main(int argc, char **argv)
 			{
 				fclose(f);
 				_free(stack);
-				free(lineptr);
 				exit(EXIT_FAILURE);
 			}
 		}
-		free(lineptr);
 	}
 	fclose(f);
 	_free(stack);
