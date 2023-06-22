@@ -7,7 +7,7 @@
  * Return: nothing
  */
 
-void _add(stack_t **stack, int line_number)
+void _add(stack_t **stack, unsigned int line_number)
 {
 	stack_t *ptr;
 
