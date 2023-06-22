@@ -10,7 +10,7 @@
 void _push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new;
-	int n, i;
+	int n;
 	char *param = gvars.raw_input;
 	
 	if (param == NULL || check_val(param) == -1)
