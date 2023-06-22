@@ -45,9 +45,13 @@ int main(int argc, char **argv)
 			check = find_op(&stack);
 			if (check == -1)
 			{
+				fclose(f);
+				_free(stack);
+				free(lineptr);
 				exit(EXIT_FAILURE);
 			}
 		}
+		free(lineptr);
 	}
 	fclose(f);
 	_free(stack);
