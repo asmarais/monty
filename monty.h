@@ -68,6 +68,6 @@ void _nop(stack_t **stack, unsigned int line_number);
 void _free(stack_t *head);
 int find_op(stack_t **stack);
 int tokenize(char *str);
-
+int check_val(char *str);
 #endif /*MONTY_H*/
 

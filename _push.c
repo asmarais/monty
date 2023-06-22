@@ -10,25 +10,10 @@
 void _push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new;
-	int n, i = 0;
+	int n;
 	char *param = gvars.raw_input;
 
-	if (param != NULL)
-	{
-		printf("%s", param);
-		if (param[0] == '-')
-			i++;
-		while (param[i] != '\0')
-		{
-			if (param[i] < '0' || param[i] > '9')
-			{
-				printf("L<%d>: usage: push integer0\n", line_number);
-				exit(EXIT_FAILURE);
-			}
-			i++;
-		}
-	}
-	else
+	if (param == NULL || check_val(param) == -1)
 	{
 		printf("L<%d>: usage: push integer1\n", line_number);
 		exit(EXIT_FAILURE);
