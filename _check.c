@@ -13,9 +13,13 @@ int check_val(char *str)
 		i++;
 	while (str[i] != '\0')
 	{
-		printf("%c", str[i]);
+		
 		if (str[i] > '0' && str[i] < '9')
+		{
+			printf("%c", str[i]);	
 			i++;
+		}
+			
 		else
 			return (-1);
 	}
