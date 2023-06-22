@@ -12,7 +12,7 @@ void _push(stack_t **stack, unsigned int line_number)
 	stack_t *new;
 	int n, i = 0;
 	char *param = gvars.raw_input;
-
+	printf("%s", param);
 	if (param != NULL)
 	{
 		if (param[0] == '-')
@@ -21,7 +21,7 @@ void _push(stack_t **stack, unsigned int line_number)
 		{
 			if (!(param[i] > 47 && param[i] < 58))
 			{
-				printf("L<%d>: usage: push integer'1'\n", line_number);
+				printf("L<%d>: usage: push integer\n", line_number);
 				exit(EXIT_FAILURE);
 			}
 			i++;
@@ -29,7 +29,7 @@ void _push(stack_t **stack, unsigned int line_number)
 	}
 	else
 	{
-		printf("L<%d>: usage: push integer\n", line_number);
+		printf("L<%d>: usage: push integer'1'\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 
