@@ -16,6 +16,7 @@ int main(int argc, char **argv)
 	char *lineptr = NULL;
 	size_t n = 0;
 	ssize_t read;
+	int token;
 
 	gvars.line_number = 0;
 	gvars.cmd = NULL;
