@@ -22,6 +22,7 @@ typedef struct variables
 	char *cmd;
 	char *raw_input;
 	int value;
+	int ret_val;
 } vars;
 
 /* global variables */
