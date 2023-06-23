@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 	size_t n = 0;
 	ssize_t read;
 	int token;
-	int check;
+	
 
 	gvars.line_number = 0;
 	gvars.cmd = NULL;
