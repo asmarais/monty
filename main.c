@@ -42,13 +42,17 @@ int main(int argc, char **argv)
 		token = tokenize(lineptr);
 		if (token != -1)
 		{
-			check = find_op(&stack);
-			if (check == -1)
+			find_op(&stack);
+			if (gvars.ret_val == -1)
 			{
+				free(lineptr);
+				_free(stack);
+				fclose(f);
 				exit(EXIT_FAILURE);
 			}
 		}
 	}
+	free(lineptr);
 	fclose(f);
 	_free(stack);
 	return (1);
