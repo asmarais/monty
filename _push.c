@@ -23,6 +23,7 @@ void _push(stack_t **stack, unsigned int line_number)
 	new = malloc(sizeof(stack_t));
 	if (new == NULL)
 	{
+		free(new);
 		gvars.ret_val = -1;
 		return;
 	}
