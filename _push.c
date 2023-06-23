@@ -16,12 +16,16 @@ void _push(stack_t **stack, unsigned int line_number)
 	if (param == NULL || check_val(param) == -1)
 	{
 		printf("L<%d>: usage: push integer\n", line_number);
-		exit(EXIT_FAILURE);
+		gvars.ret_val = -1;
+		return;
 	}
 
 	new = malloc(sizeof(stack_t));
 	if (new == NULL)
-		exit(EXIT_FAILURE);
+	{
+		gvars.ret_val = -1;
+		return;
+	}
 
 	n = atoi(param);
 	new->n = n;
