@@ -15,7 +15,8 @@ void _add(stack_t **stack, unsigned int line_number)
 	{
 		fprintf(stdout, "L%d: can't swap, stack too short\n",
 			line_number);
-		exit(EXIT_FAILURE);
+		gvars.ret_val = -1;
+		return;
 	}
 	ptr = *stack;
 	(ptr->next)->n += ptr->n;
