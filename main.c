@@ -55,5 +55,5 @@ int main(int argc, char **argv)
 	free(lineptr);
 	fclose(f);
 	_free(stack);
-	return (1);
+	return (gvars.ret_val);
 }
