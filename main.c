@@ -53,7 +53,8 @@ int main(int argc, char **argv)
 		}
 	}
 	free(lineptr);
-	fclose(f);
 	_free(stack);
+	fclose(f);
+	
 	return (gvars.ret_val);
 }
