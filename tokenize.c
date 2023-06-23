@@ -19,7 +19,7 @@ int tokenize(char *str)
 	gvars.cmd = strtok(str, delim);
 	if (gvars.cmd[0] == '#')
 		return (-1);
-	if (gvars.cmd != NULL)
+	if (gvars.cmd[0] != '\0')
 	{
 	        gvars.raw_input= strtok(NULL, delim);
 		if (gvars.raw_input)
